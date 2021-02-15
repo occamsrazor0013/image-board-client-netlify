@@ -164,7 +164,7 @@ function Messages() {
                 Created by David Chan, An Aspiring Full Stack Developer{"\n"}
             </h3>
             <h4 class="centerText">
-                <a href="#">A Link to My Website</a>
+                <a href="https://occamsrazor0013.github.io/">A Link to My Website</a>
             </h4>
             <h5 class="centerText">
                 You MUST use a direct image link or the image will be broken. For example, do not use image links that direct you to a website.
