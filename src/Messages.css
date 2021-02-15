@@ -1,0 +1,37 @@
+/*secondary css after bootswatch css*/
+.centerText{
+    display: block;
+    text-align: center;
+}
+
+#finalTextAtTop{
+    margin-bottom: 2em;
+}
+
+a:link, a:hover{
+    text-decoration: none
+}
+
+
+img{
+    height: 200px;
+    width: auto;
+}
+
+li{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.media-body{
+    height: 234px;
+}
+
+small{
+    vertical-align: text-bottom;
+}
+
+p{
+    color: #ad5bd6
+}
+
