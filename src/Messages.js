@@ -172,9 +172,9 @@ function Messages() {
             <h6 class="centerText" id="finalTextAtTop">
                The back end of this board is hosted on heroku and uses dynos to start up the server. However, those dynos sleep after 30 seconds, meaning the server is shut off.
                <br />
-               When you first access to this site, A GET request sent from here to the API which then starts up the server again.
+               When you first access this site, A GET request is sent from here to the API which then starts up the server again.
                <br />
-               Because it takes time to start up the server, you may not see anything at first or your message will not be posted if you post too quickly. Sorry!
+               Because it takes time to start up the server, you may not see anything at first or your message will not be posted if you post too quickly after the page loads. Sorry!
             </h6>
             <div class="container">
                 <button type="button" class="btn btn-info mb-3" onClick = {() => toggler()}>Show Message Form</button>
