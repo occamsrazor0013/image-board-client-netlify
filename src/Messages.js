@@ -14,15 +14,15 @@ function Messages() {
     const {register, handleSubmit, errors} = useForm();
     
     {/*onSubmit function that triggers when form is clicked, built in with message form*/}
-    const onSubmit = data => {
+    const onSubmit = (data) => {
+        console.log(data)
         const sendMessage = {
             method: 'POST',
             headers: { 'Content-type': 'application/json'},
             body: JSON.stringify(data)
         }
         fetch(url, sendMessage)
-            .then(response => response.json())
-            .then(window.location.reload(true))
+            .then(() => window.location.reload(true))
     }
     {/*onSubmit, fetch url and accept sendMessage object which has the http post request, reload after sending to json */}
 
