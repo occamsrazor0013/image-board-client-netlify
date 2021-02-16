@@ -21,9 +21,8 @@ function Messages() {
             body: JSON.stringify(data)
         }
         fetch(url, sendMessage)
-            .then(response => console.log(response))
             .then(response => response.json())
-        //window.location.reload(false)
+            .then(window.location.reload(true))
     }
     {/*onSubmit, fetch url and accept sendMessage object which has the http post request, reload after sending to json */}
 
