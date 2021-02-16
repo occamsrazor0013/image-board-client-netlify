@@ -157,7 +157,7 @@ function Messages() {
 
     return (
         <div>
-            <h1 class="centerText" id="finalTextAtTop">
+            <h1 class="centerText mb-2 mt-2">
                 Don't Think, Just Do.
             </h1>
             <div class="container">
