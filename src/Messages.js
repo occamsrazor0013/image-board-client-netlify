@@ -3,6 +3,8 @@ import React, { useState, useEffect } from 'react';
 import './Messages.css'
 import { useForm} from "react-hook-form";
 import { ErrorMessage } from "@hookform/error-message";
+import Img from "react-image-fallback";
+import deadLink from "./deadLink.png"
 
 {/*after strugging with the problem input fields losing focus after a single character input, I gave up and used react-hook-form package*/}
 {/*input fields were losing focus because parent component re renders after every character input*/}
@@ -60,7 +62,11 @@ function Messages() {
             <div class="listed-unstyled">
             {messages.slice().reverse().map((message) => 
                 <li class="media" key={message._id}>
-                    <img class="mr-3 mb-3 mt-3" src={message.imageURL}></img>
+                    <Img 
+                        class="mr-3 mb-3 mt-3" 
+                        src={message.imageURL}
+                        fallbackImage={deadLink}
+                    />
                     <div class="media-body">
                         <h6 class="mt-2">Username: {message.username}</h6>
                         <h6>Subject: {message.subject}</h6>
@@ -148,6 +154,7 @@ function Messages() {
                     name="imageURL"
                     placeholder="Enter an Image URL"
                     />
+                    <input class="mt-3" ref={register} type="file" name="imageURL" />
                 </div>
                 <input type="submit" class="btn btn-primary mb-3" />
             </form>
