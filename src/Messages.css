@@ -1,6 +1,6 @@
 /*secondary css after bootswatch css*/
 body{
-    background-color: #dea4f5;
+    background-color: #36454f;
 }
 
 .centerText{
@@ -14,7 +14,7 @@ a:link, a:hover{
 
 
 img{
-    height: 150px;
+    height: 120px;
     width: auto;
 }
 
@@ -24,7 +24,7 @@ li{
 }
 
 .media-body{
-    height: 184px;
+    height: 154px;
 }
 
 small{
