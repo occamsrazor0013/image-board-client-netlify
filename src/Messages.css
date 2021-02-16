@@ -8,23 +8,23 @@ body{
     text-align: center;
 }
 
+#finalTextAtTop{
+    margin-bottom: 2em;
+}
+
 a:link, a:hover{
     text-decoration: none
 }
 
 
 img{
-    height: 120px;
-    width: auto;
+    height: auto;
+    width: 300px;
 }
 
 li{
     border-top: 1px solid white;
     border-bottom: 1px solid white;
-}
-
-.media-body{
-    height: 154px;
 }
 
 small{
