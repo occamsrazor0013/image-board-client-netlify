@@ -154,7 +154,6 @@ function Messages() {
                     name="imageURL"
                     placeholder="Enter an Image URL"
                     />
-                    <input class="mt-3" ref={register} type="file" name="imageURL" />
                 </div>
                 <input type="submit" class="btn btn-primary mb-3" />
             </form>
