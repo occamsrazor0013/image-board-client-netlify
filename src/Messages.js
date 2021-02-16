@@ -62,9 +62,9 @@ function Messages() {
                 <li class="media" key={message._id}>
                     <img class="mr-3 mb-3 mt-3" src={message.imageURL}></img>
                     <div class="media-body">
-                        <h5 class="mt-2">Username: {message.username}</h5>
-                        <h5>Subject: {message.subject}</h5>
-                        <h5>Message:</h5>
+                        <h6 class="mt-2">Username: {message.username}</h6>
+                        <h6>Subject: {message.subject}</h6>
+                        <h6>Message:</h6>
                         {message.message}
                         <br />
                     </div>
@@ -157,8 +157,8 @@ function Messages() {
 
     return (
         <div>
-            <h1 class="centerText mb-2 mt-2">
-                Don't Think, Just Do.
+            <h1 class="centerText mb-3 mt-3">
+                don't think, just do.
             </h1>
             <div class="container">
                 <button type="button" class="btn btn-info mb-3" onClick = {() => toggler()}>Show Message Form</button>
