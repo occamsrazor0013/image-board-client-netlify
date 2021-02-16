@@ -157,25 +157,9 @@ function Messages() {
 
     return (
         <div>
-            <h1 class="centerText">
-                Welcome to my Full Stack Image Board!
+            <h1 class="centerText" id="finalTextAtTop">
+                Don't Think, Just Do.
             </h1>
-            <h3 class="centerText">
-                Created by David Chan, An Aspiring Full Stack Developer{"\n"}
-            </h3>
-            <h4 class="centerText">
-                <a href="https://occamsrazor0013.github.io/">A Link to My Website</a>
-            </h4>
-            <h5 class="centerText">
-                You MUST use a direct image link or the image will be broken. For example, do not use image links that direct you to a website.
-            </h5>
-            <h6 class="centerText" id="finalTextAtTop">
-               The back end of this board is hosted on heroku and uses dynos to start up the server. However, those dynos sleep after 30 seconds, meaning the server is shut off.
-               <br />
-               When you first access this site, A GET request is sent from here to the API which then starts up the server again.
-               <br />
-               Because it takes time to start up the server, you may not see anything at first or your message will not be posted if you post too quickly after the page loads. Sorry!
-            </h6>
             <div class="container">
                 <button type="button" class="btn btn-info mb-3" onClick = {() => toggler()}>Show Message Form</button>
                 
