@@ -58,27 +58,24 @@ function Messages() {
     {/*used bootstrap to map onto a list class and style headings*/}
     function ActualMessages(){
         return(
-        <div class="container">
-            <div class="listed-unstyled">
+            <ul class="listed-unstyled">
             {messages.slice().reverse().map((message) => 
                 <li class="media" key={message._id}>
                     <Img 
-                        class="mr-3 mb-3 mt-3" 
+                        class="mb-2 mt-2 mr-2" 
                         src={message.imageURL}
                         fallbackImage={deadLink}
                     />
                     <div class="media-body">
-                        <h6 class="mt-2">Username: {message.username}</h6>
-                        <h6>Subject: {message.subject}</h6>
-                        <h6>Message:</h6>
+                        <small>Timestamp: {message.created}</small>
+                        <h6 class="mt-0 mb-0">Username: {message.username}</h6>
+                        <h6 class="mt-0 mb-0">Subject: {message.subject}</h6>
+                        <h6 class="mt-0 mb-0">Message:</h6>
                         {message.message}
-                        <br />
                     </div>
-                    <small>Timestamp: {message.created}</small>
                 </li>
             )}
-            </div>
-        </div>
+            </ul>
         )}
     
     {/*the message form*/}  

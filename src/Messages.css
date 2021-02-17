@@ -16,22 +16,25 @@ a:link, a:hover{
     text-decoration: none
 }
 
-
-img{
+Img{
     height: auto;
-    width: 300px;
+    max-width: 250px;
+}
+
+@media (max-width: 576px){
+    Img{
+        height: auto;
+        max-width: 100px;
+    }
+    .listed-unstyled{
+        padding-left: 0px;
+    }
+    h1{
+        font-size: 4em;
+    }
 }
 
 li{
     border-top: 1px solid white;
     border-bottom: 1px solid white;
 }
-
-small{
-    vertical-align: text-bottom;
-}
-
-p{
-    color: #ad5bd6
-}
-
